@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Fire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+       
+    <canvas class="canvas hide" width="1920" height="1080"></canvas>
+
+    <section class="start">
+        <div class="lets-container">
+            <div class="btns">
+                <button class="startBtn">LET'S START</button>
+                <button class="settingsBtn">
+                    <img class="settingsBtn__img" src="images/settingsIcon.png" alt="">
+                </button>
+                <div class="record-score__container">
+                    <p>Record score:</p>
+                    <span class="record-score">560</span>
+                </div>
+            </div>
+        </div>
+        <div class="settings hide">
+            <h2 class="settings__h2">Rules of the game</h2>
+            <p class="settings__p">
+                Your hero breaths fire (Space Key)
+            </p>
+            <p class="settings__p">
+                You must destroy planes to gain points.
+            </p>
+
+            <div class="settings__container">
+                <div class="images">
+                    <img src="images/airplaneRight.png">
+                    <img src="images/militaryPlaneRight.png">
+                    <img src="images/helicopterRight.png">
+                    <img src="images/jetRight.png">
+                </div>
+                <div class="points">
+                    <p>10 Points.</p>
+                    <p>20 Points<br>(You should fire it twice)</p>
+                    <p>30 Points<br>(You should fire it twice)</p>
+                    <p>50 Points</p>
+                </div>
+            </div>
+
+            <p class="settings__p" >
+                If they reach you then you loose.
+            </p>
+
+            <button class="close-settings">
+                <img src="images/closeIcon.png" alt="">
+            </button>
+        </div>
+    </section>
+    <canvas class="canvas hide" width="1920" height="1080"></canvas>
+    <div class="score hide">0</div>
+    <button class="backToStart hide">
+        <img src="images/backIcon.png" alt="">
+    </button>
+    <script src="app.js"></script>
+</body>
+</html>
